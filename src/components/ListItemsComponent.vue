@@ -63,7 +63,7 @@ export default {
         edit: true,
       }
       try{
-        const response = await fetch(`http://localhost:3000/clothes/${id}`);
+        const response = await fetch(`https://my-json-server.typicode.com/DavidXploidz/online_store/clothes/${id}`);
         const data = await response.json();
         this.stockItem = data.pieces;
       }catch(error){

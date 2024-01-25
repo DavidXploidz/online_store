@@ -35,7 +35,7 @@ import { localePrices } from '../helpers/formatPrice'
       localePrices,
       async getItems(){
         try {
-          const response = await fetch('http://localhost:3000/clothes?_page=1&_limit=10');
+          const response = await fetch('https://my-json-server.typicode.com/DavidXploidz/online_store/clothes?_page=1&_limit=10');
           const data = await response.json();
           this.items = data;
           this.mainItem = data[data.length - 1];

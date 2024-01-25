@@ -35,7 +35,7 @@ export default {
     async getWomanProducts(){
       try{
         this.loading = true;
-        const response = await fetch('http://localhost:3000/clothes?gender=woman');
+        const response = await fetch('https://my-json-server.typicode.com/DavidXploidz/online_store/clothes?gender=woman');
         const data = await response.json();
         this.products = data;
         this.loading = false;

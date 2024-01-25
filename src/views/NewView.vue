@@ -38,7 +38,7 @@ export default {
         setTimeout(() => {
           
         },3000)
-        const response = await fetch('http://localhost:3000/clothes?new=true');
+        const response = await fetch('https://my-json-server.typicode.com/DavidXploidz/online_store/clothes?new=true');
         const data = await response.json();
         this.products = data;
         this.loading = false;
